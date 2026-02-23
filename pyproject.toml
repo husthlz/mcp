@@ -1,0 +1,21 @@
+[project]
+name = "YA_MCPServer_re-identification"
+version = "0.1.0"
+description = "a MCP server for person re-identification"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "art>=6.5",
+    "black>=25.9.0",
+    "colorlog>=6.10.1",
+    "gdown>=5.2.1",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.14.0",
+    "pyyaml>=6.0.2",
+    "ruff>=0.14.4",
+    "tensorboard>=2.20.0",
+    "torch>=2.10.0",
+    "torchreid>=0.2.5",
+    "torchvision>=0.25.0",
+    "ultralytics>=8.4.14",
+]
