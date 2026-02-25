@@ -29,7 +29,8 @@ def setup_logger():
     # ------------- 控制台输出 -------------
     console_cfg = cfg.get("console", {})
     if console_cfg.get("enabled", True):
-        console_handler = logging.StreamHandler(sys.stdout)
+        # 使用 stderr 以避免在使用 stdio 传输时污染 stdout（stdout 仅保留给 MCP JSON 消息）
+        console_handler = logging.StreamHandler(sys.stderr)
         console_handler.setLevel(console_cfg.get("level", "INFO").upper())
 
         color_format = (

@@ -1,4 +1,5 @@
 from art import text2art
+import sys
 from .config import (
     get_server_name,
     get_server_author,
@@ -21,8 +22,8 @@ def print_server_banner():
     description = get_server_description()
 
     ascii_name = text2art(name, font="bubble")
-    print(ascii_name)
-    print(f"Author: {author}")
-    print(f"Version: {version}")
-    print(f"{description}")
-    print("=" * 60)
+    print(ascii_name, file=sys.stderr)
+    print(f"Author: {author}", file=sys.stderr)
+    print(f"Version: {version}", file=sys.stderr)
+    print(f"{description}", file=sys.stderr)
+    print("=" * 60, file=sys.stderr)

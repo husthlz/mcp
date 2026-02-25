@@ -14,8 +14,8 @@ logger = logging.getLogger(__name__)
 async def person_appearances(
     target_image: str,
     image_folder: str,
-    conf_threshold: float = 0.7,
-    reid_threshold: float = 0.6,
+    conf_threshold: float = 0.8,
+    reid_threshold: float = 0.7,
     max_images: int = 100,
     save_matched_crops: bool = False,
     output_folder: str = "out_put"
@@ -57,8 +57,8 @@ async def person_appearances(
 async def person_vector_appearances(
     target_vector:  List[float],
     image_folder: str,
-    conf_threshold: float = 0.7,
-    reid_threshold: float = 0.6,
+    conf_threshold: float = 0.8,
+    reid_threshold: float = 0.7,
     max_images: int = 100,
     save_matched_crops: bool = False,
     output_folder: str = "out_put"
