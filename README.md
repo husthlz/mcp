@@ -32,7 +32,7 @@
 | generate_yolo_prompt | 生成用于调用YOLO算法的MCP prompts | task_type (str): 任务；image_path (str): 输入图像的路径； conf (float): 置信度阈值，默认为 0.5 | (str)生成的MCP prompts   | 无 |
 | image_appearances_prompt |  生成用于调用工具统计目标人物在图片集中出现次数的MCP prompts  | target_image (str): 目标人物图片路径；image_folder (str): 图片集文件夹路径 | (str) 生成的MCP prompts | 无 |
 | extract_features_prompt |  生成用于调用工具提取目标人物特征向量并插入数据库的MCP prompts | target_image (str): 目标人物图片路径；person_name (str): 目标人物的名字 |  (str): 生成的MCP prompts | 无 |
-| retrieve_and_count_person_appearances_prompt | 生成用于调用工具从数据库中提取目标人物特征向量并统计其在图片集中出现次数的MCP prompts | person_name (str): 目标人物的名字；image_folder (str): 图片集文件夹路径 | (str)： 生成的MCP prompts | 无 |
+| retrieve_and_count_prompt | 生成用于调用工具从数据库中提取目标人物特征向量并统计其在图片集中出现次数的MCP prompts | person_name (str): 目标人物的名字；image_folder (str): 图片集文件夹路径 | (str)： 生成的MCP prompts | 无 |
 
 ### 项目结构
 
